@@ -1,0 +1,42 @@
+h1 {
+  font-family: 'Josefin Sans';
+}
+
+p {
+  font-family: 'Josefin Sans', 'Ubuntu Mono', monospace;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  color: black;
+  background: white;
+  border: solid;
+  border-width: thin;
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  margin-right: 0.5em;
+  font-family: 'Josefin Sans';
+}
+
+.recipe {
+  border-bottom: solid;
+  border-width: thin;
+}
+
+.header {
+  display: block;
+}
+
+.title {
+  display: inline-block;
+  width: 35em;
+}
+
+#new {
+  display: inline-block;
+}

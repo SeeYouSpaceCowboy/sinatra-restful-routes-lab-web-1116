@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/center.css">
+    <link rel="stylesheet" href="/stylesheets/recipe.css">
+    <title></title>
+  </head>
+  <body>
+    <form action="/recipe/<%=@recipe.id%>" method="post">
+      <input id="hidden" type="hidden" name="_method" value="patch">
+      <p>
+        <label>Name</label>
+        <input type="text" name="name" value="<%=@recipe.name%>">
+      </p>
+      <p>
+        <label>Ingredients</label>
+        <input type="text" name="ingredients" value="<%=@recipe.ingredients%>">
+      </p>
+      <p>
+        <label>Cook Time</label>
+        <input type="text" name="cook_time" value="<%=@recipe.cook_time%>">
+      </p>
+      <a href="/recipes"><button type="button">cancel</button></a>
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
